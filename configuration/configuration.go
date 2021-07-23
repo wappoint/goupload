@@ -19,6 +19,11 @@ func Init(cfg string) error {
 	return nil
 }
 
+func (c *Config) initConfig() error {
+
+	return nil
+}
+
 func (c *Config) watchConfig() {
 	viper.WatchConfig()
 	viper.OnConfigChange(func(e fsnotify.Event) {
